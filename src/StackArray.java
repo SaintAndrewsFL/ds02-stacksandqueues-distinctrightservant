@@ -1,7 +1,42 @@
+import java.util.ArrayList;
 
+public class StackArray<t> {
+    private ArrayList<t> myStack = new ArrayList<>();
 
-public class StackArray {
+    public boolean push(t item) {
+        if (item != null) {
+            myStack.add(item);
+            return true;
+        } else {
+            System.out.println("Null entered");
+            return false;
+        }
+    }
 
+    public t dequeue() {
+        t temp = myStack.get(myStack.size()-1);
+        myStack.remove(myStack.size()-1);
+        return temp;
+    }
+
+    public t peek() {
+        return myStack.get(myStack.size()-1);
+    }
+
+    public void display() {
+        for (int i = myStack.size()-1; i >= 0; i--) {
+            System.out.println(myStack.get(i));
+        }
+    }
+
+    public int size() {
+        return myStack.size();
+    }
+
+    public boolean isEmpty() {
+        return myStack.isEmpty();
+
+    }
 }
 
 

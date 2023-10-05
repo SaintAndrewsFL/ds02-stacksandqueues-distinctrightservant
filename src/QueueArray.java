@@ -1,5 +1,37 @@
+import java.util.ArrayList;
 
-public class QueueArray {
+public class QueueArray<t> {
+    private ArrayList<t> myQueue = new ArrayList<>();
+    public boolean enqueue(t item){
+        if(item!=null) {
+            myQueue.add(item);
+            return true;
+        }
+        else{
+            System.out.println("Null entered");
+            return false;
+        }
+    }
+    public t dequeue(){
+        t temp = myQueue.get(0);
+        myQueue.remove(0);
+        return temp;
+    }
+    public t peek(){
+        t temp = myQueue.get(0);
+        return temp;
+    }
+    public void display(){
+        for(int i = 0; i<=myQueue.size(); i++){
+            System.out.println(myQueue.get(i));
+        }
+    }
+    public int size(){
+        return myQueue.size();
+    }
+    public boolean isEmpty(){
+        return myQueue.isEmpty();
+    }
 }
 
 
