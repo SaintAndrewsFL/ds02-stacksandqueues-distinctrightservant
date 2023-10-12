@@ -1,9 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        QueueArray<String> myQueueLL = new QueueArray<>();
-        for(int i = 0; i<10;i++){
-            myQueueLL.enqueue(""+i);
+        StackArray<String> myQueueLL = new StackArray<>();
+        for(int i = 10; i<20;i++){
+            myQueueLL.push(""+i);
         }
-        System.out.println(myQueueLL.size());
+        myQueueLL.dequeue();
+        myQueueLL.dequeue();
+        myQueueLL.display();
+        System.out.println();
+        System.out.println(myQueueLL.peek());
     }
 }
