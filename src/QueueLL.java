@@ -42,7 +42,7 @@ public class QueueLL <t>{
         }
     }
     public int size(){
-        int count = 0;
+        int count = 1;
         Node cur = head;
         while(cur.getNext()!=null){
             count +=1;

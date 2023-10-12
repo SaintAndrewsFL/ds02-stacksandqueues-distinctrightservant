@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        QueueArray<String> myQueueLL = new QueueArray();
+        QueueArray<String> myQueueLL = new QueueArray<>();
         for(int i = 0; i<10;i++){
             myQueueLL.enqueue(""+i);
         }
-        myQueueLL.display();
+        System.out.println(myQueueLL.size());
     }
 }
