@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("¯\\_(ツ)_/¯");
-//        QueueLL<String> myQueueLL = new QueueLL();
+        QueueArray<String> myQueueLL = new QueueArray();
+        for(int i = 0; i<10;i++){
+            myQueueLL.enqueue(""+i);
+        }
+        myQueueLL.display();
     }
 }

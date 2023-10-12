@@ -22,7 +22,7 @@ public class QueueArray<t> {
         return temp;
     }
     public void display(){
-        for(int i = 0; i<=myQueue.size(); i++){
+        for(int i = 0; i<myQueue.size(); i++){
             System.out.println(myQueue.get(i));
         }
     }

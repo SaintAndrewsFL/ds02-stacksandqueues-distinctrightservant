@@ -36,7 +36,7 @@ public class QueueLL <t>{
     }
     public void display(){
         Node cur = head;
-        while(cur.getNext()!=null){
+        while(cur!=null){
             System.out.println(cur.getData());
             cur = cur.getNext();
         }
